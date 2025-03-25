@@ -1,20 +1,18 @@
-# Number Plate Detection using Django
+<h1 align="center">Number Plate Detection with Django</h1>
 
-<!-- <h1 align="center">Django Plate Number Detection</h1> -->
+<div align="center">
 
-<!-- <div align="center">
+![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)&nbsp;
+![Django](https://img.shields.io/badge/Django-092E20?style=for-the-badge&logo=django&logoColor=green)&nbsp;
+![OpenCV](https://img.shields.io/badge/OpenCV-5C3EE8.svg?style=for-the-badge&logo=OpenCV&logoColor=white)&nbsp;
+![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C.svg?style=for-the-badge&logo=PyTorch&logoColor=white)&nbsp;
+![TailwindCSS](https://img.shields.io/badge/Tailwind%20CSS-06B6D4.svg?style=for-the-badge&logo=Tailwind-CSS&logoColor=white)
 
-![Python](https://img.shields.io/badge/-Python-05122A?style=flat&logo=python)&nbsp;
-![OpenCV](https://img.shields.io/badge/-OpenCV-05122A?style=flat&logo=opencv)&nbsp;
-![Django](https://img.shields.io/badge/-Django-05122A?style=flat&logo=django)&nbsp;
-![TailwindCSS](https://img.shields.io/badge/-TailwindCSS-05122A?style=flat&logo=tailwindcss)&nbsp;
-![PyTorch](https://img.shields.io/badge/-PyTorch-05122A?style=flat&logo=pytorch)&nbsp;
-
-</div> -->
+</div>
 
 <!-- <img src="assets/preview.png" alt="Preview"> -->
 
-<!-- <p align="center">This repository is web application that aims to provide various features such as video live stream, haarcascade classifier, and optical character recognition (OCR). This app is built using Python, OpenCV, Django, TailwindCSS (django-tailwind), EasyOCR</p>
+<p align="justify">This repository is web application that aims to provide various features such as video live stream, haarcascade classifier, and optical character recognition (OCR). This app is built using Python, OpenCV, Django, TailwindCSS (django-tailwind), EasyOCR</p>
 
 ## Table of Contents
 
@@ -25,10 +23,11 @@
     -   [Commons](#commons)
         -   [Live Video Stream Camera Not Detecting](#live-video-stream-camera-not-detecting)
         -   [OpenCV imshow The function is not implemented](#opencv-imshow-the-function-is-not-implemented)
+        -   [NPM_BIN_PATH Error](#npm-bin-path-error)
     -   [Windows](#windows)
-        -   [PyTorch Library fbgem.dll](#pytorch-library-fbgemdll)
-        -   [OMP: Error #15: Initializing libiomp5md.dll](#omp-error-15-initializing-libiomp5mddll-but-found-libomp140x86_64dll-already-initialized)
--   [Credits](#credits) -->
+        -   [PyTorch Library fbgem.dll](#pytorch-library-fbgem-dll)
+        -   [OMP: Error #15: Initializing libiomp5md.dll](#omp-error-15-initializing-libiomp5mdll)
+-   [Credits](#credits)
 
 <!-- ## Demo App
 
@@ -37,75 +36,54 @@ https://github.com/user-attachments/assets/b2837dfc-e000-4687-99eb-3744370d05ef 
 ## Tech Stack
 
 -   [Python](https://www.python.org) (`Programming Language`)
-<!-- : Python is a high-level, interpreted programming language known for its simplicity and versatility, widely used in web development, data analysis, artificial intelligence, scientific computing, and more. -->
+
 -   [OpenCV](https://opencv.org) (`Computer Vision`)
-<!-- : OpenCV (Open Source Computer Vision Library) is an open-source computer vision and machine learning software library. It provides a comprehensive set of features for image processing, computer vision, and machine learning. -->
+
 -   [Django](https://www.djangoproject.com) (`Framework`)
-<!-- : Django is a high-level Python web framework that encourages rapid development and clean, pragmatic design. It is designed to help developers build robust and scalable web applications quickly. -->
+
 -   [TailwindCSS](https://tailwindcss.com) (`CSS Framework`)
-<!-- : TailwindCSS is a utility-first CSS framework for building custom user interfaces rapidly and efficiently. It provides a comprehensive set of CSS utility classes that allow developers to design directly in their markup. -->
+
 -   [EasyOCR](https://github.com/JaidedAI/EasyOCR) (`OCR`)
-<!-- : EasyOCR is a ready-to-use Optical Character Recognition (OCR) library built with deep learning techniques. It can handle text in different languages and is designed for high accuracy and performance. -->
 
 ## Running on Localhost
 
-1. Clone this repository
+1. Clone this repository:
 
 ```bash
-git clone https://github.com/abhishekjaiswar221/number-plate-detection-with-django.git && cd number-plate-detection-with-django
+git clone https://github.com/abhishekjaiswar221/number-plate-detection-with-django.git
 ```
 
-2. Create the virtual environment using Anaconda
+2. Change the directory:
+
+```bash
+cd number-plate-detection-with-django
+```
+
+3. Create the virtual environment using Anaconda:
 
 ```bash
 conda create -n number-plate-detection-with-django python==3.8
 ```
 
-<!-- 2. Install `python-virtualenv` (in my case use `Arch Linux`) and create the virtual environment
-
-> **NOTE**: If you are using windows you can install with anaconda, then create the virtual environment
->
-> ```ps
-> conda create -n number-plate-detection-with-django python==3.8
-> ``` -->
-
-<!-- ```bash
-sudo pacman -S python-virtualenv
-```
-
-```bash
-virtualenv django-plate-number-detection
-``` -->
-
-3. Activate the virtual environment to the current shell session
-
-<!-- > **NOTE**: If you are using windows and anaconda, to activate the virtual environment use this command instead
->
-> ```ps
-> conda activate django-plate-number-detection
-> ``` -->
+4. Activate the virtual environment to the current shell session
 
 ```bash
 conda activate number-plate-detection-with-django
 ```
 
-<!-- ```bash
-source django-plate-number-detection/bin/activate
-``` -->
-
-4. Install dependency required library
+5. Install dependency required library
 
 ```bash
 pip install -r requirements.txt
 ```
 
-5. Install dependency tailwindcss library
+6. Install dependency tailwindcss library
 
 ```bash
 python manage.py tailwind install
 ```
 
-6. Running application & tailwindcss
+7. Running application & tailwindcss
 
 > **NOTE**: Running this server with seperate shell session
 
@@ -123,15 +101,15 @@ After the server running, open this url `http://localhost:8080` on your web brow
 
 ### Commons
 
-#### Live Video Stream Camera Not Detecting
+#### 1. Live Video Stream Camera Not Detecting
 
-If you got this error, just reload the page browser, sometimes it likes to error (I don't know why, but if reload it it will be normal)
+If you get this error, just reload the page browser, sometimes it likes to error (I don't know why, but if reload it it will be normal)
 
-#### OpenCV imshow The function is not implemented
+#### 2. OpenCV imshow The function is not implemented
 
 > **NOTE**: This error will not appear on this application, this error will appear if you use the `imshow` function on opencv library
 
-If you got this error message `cv2.error: OpenCV(4.10.0) /io/opencv/modules/highgui/src/window.cpp:1301: error: (-2:Unspecified error) The function is not implemented. Rebuild the library with Windows, GTK+ 2.x or Cocoa support. If you are on Ubuntu or Debian, install libgtk2.0-dev and pkg-config, then re-run cmake or configure script in function 'cvShowImage'`, just run this command
+If you get this error message `cv2.error: OpenCV(4.10.0) /io/opencv/modules/highgui/src/window.cpp:1301: error: (-2:Unspecified error) The function is not implemented. Rebuild the library with Windows, GTK+ 2.x or Cocoa support. If you are on Ubuntu or Debian, install libgtk2.0-dev and pkg-config, then re-run cmake or configure script in function 'cvShowImage'`, just run this command
 
 ```bash
 pip uninstall opencv-python-headless opencv-python
@@ -143,9 +121,29 @@ pip install opencv-python
 
 After uninstall and install the library, just run the app again
 
+#### 3. NPM_BIN_PATH Error
+
+If you get a commmad error like this `CommandError: 
+It looks like node.js and/or npm is not installed or cannot be found.
+Visit https://nodejs.org to download and install node.js for your system.
+If you have npm installed and still getting this error message, set NPM_BIN_PATH variable in settings.py to match path of NPM executable in your system. Example:
+NPM_BIN_PATH = "/usr/local/bin/npm"` when running the
+
+```bash
+python manage.py tailwind install
+```
+
+command.
+Add the below lines at the end of the code of your `app/settings.py` file.
+
+```python
+# NPM Bin Path
+NPM_BIN_PATH = "${NodeJs_Installation_Directory}/npm.cmd"
+```
+
 ### Windows
 
-#### PyTorch Library fbgem.dll
+#### 1. PyTorch Library fbgem.dll
 
 > **NOTE**: `${PATH_TO_ENV}` is dynamic location, it depends on your installation either using conda or virtualenv
 
@@ -155,11 +153,11 @@ If you got error the PyTorch library like this `OSError: [WinError 126] The spec
 -   Discuss PyTorch - Failed to import pytorch fbgemm.dll or one of its dependencies is missing: [#23](https://discuss.pytorch.org/t/failed-to-import-pytorch-fbgemm-dll-or-one-of-its-dependencies-is-missing/201969/23)
 -   DLLme - libomp140.x86_64.dll: [Download](https://www.dllme.com/dll/files/libomp140_x86_64/00637fe34a6043031c9ae4c6cf0a891d/download)
 
-#### OMP: Error #15: Initializing libiomp5md.dll, but found libomp140.x86_64.dll already initialized.
+#### 2. OMP: Error #15: Initializing libiomp5md.dll, but found libomp140.x86_64.dll already initialized.
 
 > **NOTE**: That is dangerous, since it can degrade performance or cause incorrect results. The best thing to do is to ensure that only a single OpenMP runtime is linked into the process, e.g. by avoiding static linking of the OpenMP runtime in any library. As an unsafe, unsupported, undocumented workaround you can set the environment variable KMP_DUPLICATE_LIB_OK=TRUE to allow the program to continue to execute, but that may cause crashes or silently produce incorrect results. For more information, please see http://www.intel.com/software/products/support/.
 
-If you got this error, you can add this code at file `manage.py`
+If you get this error, you can add this code at file `manage.py`
 
 ```python
 import os
