@@ -1,4 +1,4 @@
-<h1 align="center">Number Plate Detection with Django</h1>
+<h1 align="center">Number Plate Detection System using Django</h1>
 
 <div align="center">
 
@@ -35,40 +35,40 @@ https://github.com/user-attachments/assets/b2837dfc-e000-4687-99eb-3744370d05ef 
 
 ## Tech Stack
 
--   [Python](https://www.python.org) (`Programming Language`)
+-   Programming Language: [Python](https://www.python.org)
 
--   [OpenCV](https://opencv.org) (`Computer Vision`)
+-   Framework: [Django](https://www.djangoproject.com)
 
--   [Django](https://www.djangoproject.com) (`Framework`)
+-   Computer Vision: [OpenCV](https://opencv.org)
 
--   [TailwindCSS](https://tailwindcss.com) (`CSS Framework`)
+-   OCR: [EasyOCR](https://github.com/JaidedAI/EasyOCR)
 
--   [EasyOCR](https://github.com/JaidedAI/EasyOCR) (`OCR`)
+-   CSS Framework: [TailwindCSS](https://tailwindcss.com)
 
 ## Running on Localhost
 
 1. Clone this repository:
 
 ```bash
-git clone https://github.com/abhishekjaiswar221/number-plate-detection-with-django.git
+git clone https://github.com/abhishekjaiswar221/number-plate-detection-system.git
 ```
 
 2. Change the directory:
 
 ```bash
-cd number-plate-detection-with-django
+cd number-plate-detection-system
 ```
 
 3. Create the virtual environment using Anaconda:
 
 ```bash
-conda create -n number-plate-detection-with-django python==3.8
+conda create -n number-plate-detection-system python==3.8
 ```
 
 4. Activate the virtual environment to the current shell session
 
 ```bash
-conda activate number-plate-detection-with-django
+conda activate number-plate-detection-system
 ```
 
 5. Install dependency required library
