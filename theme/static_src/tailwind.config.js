@@ -62,7 +62,7 @@ module.exports = {
                 accent: "#8362da",
                 // Dark Mode Colors
                 "dark-text": "#eeebf5",
-                "dark-background": "#07040b",
+                "dark-background": "#1b1b1b",
                 "dark-primary": "#5c3eac",
                 "dark-secondary": "#311e67",
                 "dark-accent": "#47259d",
