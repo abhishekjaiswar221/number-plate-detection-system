@@ -27,25 +27,25 @@
 <body>
     <!-- Header Navigation -->
     <header
-        class="z-50 flex items-center justify-around w-full py-5 shadow-lg bg-background dark:bg-dark-background text-text dark:text-dark-text">
-        <div class="flex flex-row items-center justify-between w-full max-w-7xl">
+        class="z-50 flex items-center justify-around w-full px-6 py-5 transition duration-300 ease-in border-b shadow-sm text-text-950 bg-background-10 dark:text-text-50 dark:bg-background-950 md:px-0">
+        <li class="flex flex-col items-center justify-between w-full gap-5 md:flex-row max-w-7xl">
 
-            <div class="flex flex-row items-center justify-center gap-10">
+            <div class="flex flex-row items-center justify-start w-full gap-5 md:gap-10">
                 <div>
-                    <img class="w-20 h-20" src="{% static 'images/logo.png' %}" alt="Logo">
+                    <img class="h-[52px] w-14 md:w-20 md:h-20" src="{% static 'images/logo.png' %}" alt="Logo">
                 </div>
-                <div class="text-2xl font-bold">
+                <div class="text-xl font-semibold lg:text-2xl lg:font-bold">
                     <p>Number Plate Detection System</p>
                 </div>
             </div>
 
-            <nav class="flex items-center gap-x-8 gap-y-4">
-                <ul class="flex gap-x-8 gap-y-4">
+            <nav class="flex items-center w-full gap-x-8 gap-y-4">
+                <ul class="flex flex-row-reverse justify-end w-full gap-10 md:flex-row">
                     <li>
                         <i class="mt-3 text-lg cursor-pointer fas fa-moon" id="theme-toggle"></i>
                     </li>
                     <li>
-                        <a class="flex items-center px-3 py-2 font-medium transition duration-300 ease-in-out text-dark-text github-button rounded-xl bg-dark-primary hover:bg-primary dark:bg-primary dark:hover:bg-dark-primary"
+                        <a class="flex items-center px-3 py-2 font-medium transition duration-500 ease-in-out github-button rounded-xl bg-primary-500 text-background-10 hover:bg-primary-400 "
                             href="https://github.com/abhishekjaiswar221/number-plate-detection-system" target="_blank">
                             <i class="pr-2 fab fa-github"></i>
                             GitHub
@@ -54,7 +54,7 @@
                 </ul>
             </nav>
 
-        </div>
+            </div>
     </header>
 
     <!-- Capture Image and Show Result -->
