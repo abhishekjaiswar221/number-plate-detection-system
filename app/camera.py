@@ -26,7 +26,7 @@ class VideoCamera(object):
             return False
 
         # Flip the frame vertically
-        frame = cv2.flip(frame, 0)
+        # frame = cv2.flip(frame, 0)
 
         frameGray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
         numberPlates = plate_detection1.detectMultiScale(frameGray, scaleFactor=1.1, minNeighbors=4)

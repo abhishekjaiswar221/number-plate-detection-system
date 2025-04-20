@@ -1,4 +1,4 @@
-<h1 align="center">Number Plate Detection System using Django</h1>
+<h1 align="center">Number Plate Detection System</h1>
 
 <div align="center">
 
@@ -41,6 +41,8 @@ https://github.com/user-attachments/assets/b2837dfc-e000-4687-99eb-3744370d05ef 
 
 -   Computer Vision: [OpenCV](https://opencv.org)
 
+-   Machine Learning Framework: [PyTorch](https://pytorch.org)
+
 -   OCR: [EasyOCR](https://github.com/JaidedAI/EasyOCR)
 
 -   CSS Framework: [TailwindCSS](https://tailwindcss.com)
@@ -53,7 +55,7 @@ https://github.com/user-attachments/assets/b2837dfc-e000-4687-99eb-3744370d05ef 
 git clone https://github.com/abhishekjaiswar221/number-plate-detection-system.git
 ```
 
-2. Change the directory:
+2. Navigate to the project directory:
 
 ```bash
 cd number-plate-detection-system
@@ -62,7 +64,7 @@ cd number-plate-detection-system
 3. Create the virtual environment using Anaconda:
 
 ```bash
-conda create -n number-plate-detection-system python==3.8
+conda create -n number-plate-detection-system python==3.10
 ```
 
 4. Activate the virtual environment to the current shell session
@@ -88,14 +90,16 @@ python manage.py tailwind install
 > **NOTE**: Running this server with seperate shell session
 
 ```bash
-python manage.py runserver 0.0.0.0:8080
+python manage.py runserver 0.0.0.0:8000  # If the web page says "This site can’t be reached" run the below command
+
+python manage.py runserver
 ```
 
 ```bash
 python manage.py tailwind start
 ```
 
-After the server running, open this url `http://localhost:8080` on your web browser
+After the server running, open this url `http://localhost:8000` on your web browser
 
 ## Troubleshooting Error
 
@@ -166,10 +170,5 @@ os.environ["KMP_DUPLICATE_LIB_OK"]="TRUE"
 
 ## Credits
 
--   Damar Satria Buana
-    -   YouTube Video - [Deteksi Plat Nomor Algoritma Haarcascade Classifier dan OCR | Tugas Besar Daspro Python](https://youtu.be/teGvW4rmOYc?si=WfLgbIEIIoNrYQFG)
-    -   GitHub Repository 1 - [number-plate-detection-updated](https://github.com/notsatria/number-plate-detection-updated)
-    -   GitHub Repository 2 - [DeteksiPlatNomor](https://github.com/notsatria/DeteksiPlatNomor)
--   Sanket Sawardekar
-    -   YouTube Video - [Stream Live Video used in Django using OpenCV](https://youtu.be/KUoNQ-44-1k?si=Fmf07_PbsCmREaqd)
-    -   GitHub Repository - [Django_VideoStream](https://github.com/sawardekar/Django_VideoStream)
+-   Arman Dwi Pangestu
+    -   GitHub Repository - [Django_Plate_Number_Detection](https://github.com/armandwipangestu/django-plate-number-detection)
