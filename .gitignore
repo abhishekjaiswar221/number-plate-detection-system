@@ -1,3 +1,10 @@
+# Cache and build folders
 __pycache__/
 *.pyc
 dist/
+
+# Environment Variables
+.env
+
+# Static Files
+staticfiles/
