@@ -3,3 +3,4 @@ easyocr==1.7.1
 django==4.2.2
 django-tailwind==3.8.0
 django-tailwind[reload]==3.8.0
+python-decouple==3.8
