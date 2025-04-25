@@ -1,7 +1,7 @@
 {
-  "name": "number-plate-detection-system",
+  "name": "number-plate-recognition-system",
   "version": "1.0.0",
-  "description": "Number Plate Detection System usig Django",
+  "description": "Number Plate Recognition System usig Django",
   "scripts": {
     "start": "npm run dev",
     "build": "npm run build:clean && npm run build:tailwind",
