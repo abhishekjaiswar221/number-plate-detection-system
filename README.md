@@ -1,4 +1,4 @@
-<h1 align="center">Number Plate Detection System</h1>
+<h1 align="center">Number Plate Recognition System</h1>
 
 <div align="center">
 
@@ -52,40 +52,46 @@ https://github.com/user-attachments/assets/b2837dfc-e000-4687-99eb-3744370d05ef 
 1. Clone this repository:
 
 ```bash
-git clone https://github.com/abhishekjaiswar221/number-plate-detection-system.git
+git clone https://github.com/abhishekjaiswar221/number-plate-recognition-system.git
 ```
 
 2. Navigate to the project directory:
 
 ```bash
-cd number-plate-detection-system
+cd number-plate-recognition-system
 ```
 
-3. Create the virtual environment using Anaconda:
+3. Copy the `.env.example` file to `.env` and update the environment variables:
 
 ```bash
-conda create -n number-plate-detection-system python==3.10
+cp .env.example .env
 ```
 
-4. Activate the virtual environment to the current shell session
+4. Create the virtual environment using Anaconda:
 
 ```bash
-conda activate number-plate-detection-system
+conda create -n number-plate-recognition-system python==3.10
 ```
 
-5. Install dependency required library
+5. Activate the virtual environment to the current shell session
+
+```bash
+conda activate number-plate-recognition-system
+```
+
+6. Install dependency required library
 
 ```bash
 pip install -r requirements.txt
 ```
 
-6. Install dependency tailwindcss library
+7. Install dependency tailwindcss library
 
 ```bash
 python manage.py tailwind install
 ```
 
-7. Running application & tailwindcss
+8. Running application & tailwindcss
 
 > **NOTE**: Running this server with seperate shell session
 
