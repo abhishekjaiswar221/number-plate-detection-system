@@ -10,13 +10,13 @@
 
 </div>
 
-<!-- <img src="assets/preview.png" alt="Preview"> -->
+<img src="assets/number-plate-recognition-system.jpg" alt="Preview">
 
 <p align="justify">This repository is web application that aims to provide various features such as video live stream, haarcascade classifier, and optical character recognition (OCR). This app is built using Python, OpenCV, Django, TailwindCSS (django-tailwind), EasyOCR</p>
 
 ## Table of Contents
 
--   [Demo Application](#demo-app)
+-   [Demo Video](#demo-video)
 -   [Tech Stack](#tech-stack)
 -   [Running on Localhost](#running-on-localhost)
 -   [Troubleshooting Error](#troubleshooting-error)
@@ -29,9 +29,9 @@
         -   [OMP: Error #15: Initializing libiomp5md.dll](#omp-error-15-initializing-libiomp5mdll)
 -   [Credits](#credits)
 
-<!-- ## Demo App
+## Demo Video
 
-https://github.com/user-attachments/assets/b2837dfc-e000-4687-99eb-3744370d05ef -->
+https://github.com/user-attachments/assets/f2e5c193-b5ef-43b5-bf32-1f0835fbb5f9
 
 ## Tech Stack
 
