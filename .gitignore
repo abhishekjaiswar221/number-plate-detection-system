@@ -5,3 +5,6 @@ dist/
  
 # Environment Variables
 .env
+
+# Static Files
+staticfiles/
